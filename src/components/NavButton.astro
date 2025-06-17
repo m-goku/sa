@@ -1,0 +1,18 @@
+---
+type Props = {
+  name: string;
+  link: string;
+};
+
+const { name, link } = Astro.props;
+---
+
+<div class="hover:bg-slate-100 rounded">
+  <a href={link}>
+    <p
+      class="text-sm font-semibold text-slate-600 hover:text-slate-900 p-1 px-2 items-center"
+    >
+      {name}
+    </p>
+  </a>
+</div>
